@@ -1,0 +1,66 @@
+*{
+			margin: 0;
+			padding: 0;
+		 }
+		.warpper{
+			width: 100%;
+			height: 600px;
+			 background-image: url("../img/jiaolan.jpg");
+			background-size: 100% 100%;
+			overflow: hidden;
+		}
+		.box {
+			margin-top: 150px;
+			margin-left: 800px;
+			position: relative;
+			width: 400px;
+			height: 300px;
+			border: 1px solid #777;
+			border-radius: 3px;
+			background-color: #eee;
+		}
+		.demo{
+	
+		margin: 10px;
+			/*border: 1px solid #000;*/
+		}
+		.demo p {
+			font-size: 18px;
+			font-weight: bolder;
+			margin: 40px 0 16px 150px;
+		}
+		.inp {
+			padding-left: 20px;
+		}
+		.inp input{
+			height: 30px;
+			width: 250px;
+			border: 1px solid #000;
+			margin-bottom: 10px;
+			text-indent:14px;
+		}
+		.bottom .remember {
+			font-size: 12px;
+			margin-left: 100px;
+		}
+		
+		.final{
+			font-size: 14px;
+			color: #aaa;
+			position: absolute;
+			left: 150px;
+			bottom: 0;
+		}
+		.bottom .btn {
+			margin-top: 20px;
+		}
+		.bottom button {
+			width: 130px;
+			height: 40px;
+			background-color: #3385ff;
+			font-size: 16px;
+			font-weight: 500;
+			border-radius: 5px;
+			color: #fff;
+			margin: 5px 15px 0 40px ;
+		}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>客户管理</title>
+    <link rel="stylesheet" href="./css/customerManager.css">
+</head>
+
+<body>
+    <div class="header">
+        <div>客户管理</div>
+    </div>
+    <div class="wrapper">
+        <div class="list">
+            <ul>
+                <li>
+                    <span>姓名:</span>
+                    <input type="text">
+                </li>
+                <li>
+                    <span>账号:</span>
+                    <input type="text">
+                </li>
+                <li>
+                    <span>电话:</span>
+                    <input type="text">
+                </li>
+                <li>
+                    <span>地址:</span>
+                    <input type="text">
+                </li>
+                <li>
+                    <button>查询</button>
+                </li>
+            </ul>
+        </div>
+        <div class="show">
+            <table>
+                <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>姓名</th>
+                        <th>账号</th>
+                        <th>电话</th>
+                        <th>地址</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>王晶晶</td>
+                        <td>15991966552</td>
+                        <td>13219774664</td>
+                        <td>陕西 咸阳</td>
+                        <td>有效</td>
+                        <td>
+                            <button class="btn change">修改</button>
+                            <button class="btn you">禁用</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>曹依倩</td>
+                        <td>18391055074</td>
+                        <td>13991203683</td>
+                        <td>陕西 汉中</td>
+                        <td>无效</td>
+                        <td>
+                            <button class="btn change">修改</button>
+                            <button class="btn wu">禁用</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="alert">
+        <div class="show">
+            <div class="box">
+                <div class="header">
+                    <span class="kehu">修改客户</span>
+                    <span class="close">x</span>
+                </div>
+                <div class="found">
+                    <div class="foundy username">
+                        <span>用户姓名：</span>
+                        <input type="text" placeholder="请输入用户名">
+                    </div>
+                    <div class="foundy password">
+                        <span>登陆账号：</span>
+                        <input type="text" placeholder="请输入账号">
+                    </div>
+                    <div class="foundy tele">
+                        <span>联系电话：</span>
+                        <input type="text" placeholder="请输入电话">
+                    </div>
+                    <div class="foundy address">
+                        <span>联系地址：</span>
+                        <input type="text" placeholder="请输入地址">
+                    </div>
+                </div>
+                <div class="btn">
+                    <button>修改</button>
+                    <button class='del'>取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var change = document.getElementsByClassName('change');
+        var oAlert = document.getElementsByClassName('alert')[0];
+        var oDel = document.getElementsByClassName('del')[0];
+        var oClose = document.getElementsByClassName('close')[0];
+        for(var i = 0; i < change.length; i ++) {
+            change[i].onclick = function () {
+                oAlert.style.display = 'block';
+            }
+        }
+        oDel.onclick = close;
+        oClose.onclick = close;
+        function close() {
+            oAlert.style.display = 'none';
+        }
+
+    </script>
+</body>
+
+</html>
